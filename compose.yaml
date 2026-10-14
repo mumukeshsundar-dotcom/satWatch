@@ -1,0 +1,15 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8010:8000"
+    volumes:
+      - ./backend/app:/app/app
+      - ./data:/app/data:ro
+      - ./artifacts:/app/artifacts
+      - ./experiments:/app/experiments
+    environment:
+      DATA_DIR: /app/data
+      ARTIFACTS_DIR: /app/artifacts
+      EXPERIMENTS_DIR: /app/experiments
