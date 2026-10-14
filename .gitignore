@@ -25,7 +25,7 @@ artifacts/*
 !artifacts/.gitkeep
 
 # Local dataset files (share separately until size and licensing are checked)
-data/*.csv
+
 
 # Test and experiment outputs
 .pytest_cache/
